@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-for i in range(0, 8):
-    for j in range(i + 1, 10):
-        print("{:d}{:d}".format(i, j), end=', ')
-print("{:d}{:d}".format(i + 1, j))
+
+def comb(L):
+    for a in range(0, 10):
+        for b in range(a + 1, 10):
+            if a == 8 and b == 9:
+                print("{}{}".format(a, b))
+            else:
+                print("{}{}".format(a, b), end=", ")
