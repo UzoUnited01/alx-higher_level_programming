@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-
-def comb(L):
-    for a in range(0, 10):
-        for b in range(a + 1, 10):
-            if a == 8 and b == 9:
-                print("{}{}".format(a, b))
-            else:
-                print("{}{}".format(a, b), end=", ")
+for i in range(100):
+    if int(i / 10) != i % 10 and int(i / 10) < i % 10:
+        print("{}{}".format(int(i / 10), i % 10), end="")
+        if (i != 89):
+            print(", ", end="")
+print("")
